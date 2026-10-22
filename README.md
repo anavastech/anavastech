@@ -2,13 +2,16 @@
 
 <p align="center">
   <b>QA</b> · Pruebas funcionales y automatizadas end-to-end<br>
-  <sub>Playwright · Selenium (Java, Cucumber) · Postman · SQL · Gherkin</sub><br>
-  <sub>Lima, Perú 🇵🇪 · Disponibilidad inmediata</sub>
+  <sub>Playwright · Selenium (Java, Cucumber) · Postman · Karate · SQL · Gherkin</sub><br>
+  <sub>Lima, Perú 🇵🇪</sub>
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/alexander-navas-7083ab27a">
+  <a href="https://www.linkedin.com/in/alexander-navas-rivadeneyra-7083ab27a/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://anavastech.github.io/">
+    <img src="https://img.shields.io/badge/Portafolio-181717?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portafolio">
   </a>
   <a href="mailto:anavas.tech@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
@@ -26,10 +29,6 @@ Mi trabajo no se queda en la interfaz: analizo requerimientos, redacto historias
 ```
 Requerimiento → Criterios de aceptación → Casos de prueba → Ejecución → Defectos → Cierre
 ```
-
-### 🔎 Un caso que me gusta contar
-
-Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré el origen de una diferencia acumulada: la comisión era un campo calculado en la plataforma, mientras que el procesador la cobraba en USDT al tipo de cambio de cada momento. Pequeñas diferencias por operación que, sumadas, terminaban en un desfase de saldos.
 
 ---
 
@@ -65,6 +64,8 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
 - Page Object Model y selectores estables con `data-testid`
 - Migración de flujos a Selenium con Java y Cucumber
 - Regresión automatizada de los flujos críticos
+- Scripts en GitHub con ramas, commits y pull requests
+- CI/CD que ejecuta las pruebas en cada push, en dev, QA y prod
 
   </td>
     <td width="50%" valign="top">
@@ -90,6 +91,19 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
 
 ---
 
+## 🚀 Proyectos
+
+Proyectos públicos de práctica, todos con CI en GitHub Actions. Más detalle en mi [portafolio](https://anavastech.github.io/).
+
+| Proyecto | Qué demuestra | Enlaces |
+|---|---|---|
+| **Appium + Cucumber (Java)** | 23 escenarios BDD en 6 features sobre My Demo App de Sauce Labs: login, catálogo, carrito, checkout, WebView, gestos, app en segundo plano y botón Atrás. En CI corren los 4 escenarios `@smoke` en un emulador Android 14 (Pixel 6) en cada push | [Detalle](https://anavastech.github.io/proyectos/appium/) · [Repo](https://github.com/anavastech/appium-cucumber-java-framework) |
+| **Selenium + Cucumber (Java)** | 52 escenarios en Gherkin en español: 37 de UI sobre SauceDemo y 15 de API sobre Restful Booker. La suite de UI corre en CI en Chrome, Firefox y Edge, y el smoke en mobile, en cada push y a diario. Incluye 4 chequeos de accesibilidad con axe y 10 escenarios `@known-defect` que documentan defectos reales | [Detalle](https://anavastech.github.io/proyectos/selenium/) · [Repo](https://github.com/anavastech/selenium-cucumber-java-framework) |
+| **Playwright + TypeScript** | 48 tests únicos (33 de UI sobre SauceDemo y 15 de API sobre Restful Booker) en Chromium, Firefox, WebKit y mobile (Pixel 5), que suman 122 ejecuciones. Smoke en cada push y suite completa a diario. Incluye mocking de red, accesibilidad con axe y 9 tests `@known-defect` | [Detalle](https://anavastech.github.io/proyectos/playwright/) · [Repo](https://github.com/anavastech/playwright-ts-qa-suite) |
+| **Karate + JUnit 5 (Java)** | 47 escenarios de API sobre los 8 endpoints de Restful Booker, con validación de contratos y casos data-driven. En CI en cada push y a diario, con el reporte publicado en GitHub Pages. Además, 20 escenarios `@bug` documentan defectos reales de la API | [Ver en GitHub](https://github.com/anavastech) |
+
+---
+
 ## 🛠️ Stack
 
 <p>
@@ -104,6 +118,7 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
   <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white">
   <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white">
   <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black">
   <img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white">
@@ -111,22 +126,21 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
 
 | Área | Herramientas |
 |---|---|
-| Automatización E2E | Playwright (TypeScript), Selenium (Java, Cucumber) |
-| Pruebas de API | Postman, Karate |
-| Bases de datos | SQL, MongoDB |
+| Automatización E2E | Playwright (TypeScript), Selenium (Java, Cucumber), Appium (proyecto personal) |
+| API y datos | Postman, Karate · SQL, MongoDB |
 | BDD y requerimientos | Gherkin, Cucumber, criterios de aceptación |
 | Gestión | Jira, Scrum |
-| Control de versiones | Git, GitHub |
-| Herramientas | Excel, Power BI, Figma, Slack |
-| Conocimientos básicos | JMeter (pruebas de rendimiento), Appium (pruebas mobile) |
+| CI/CD y control de versiones | GitHub Actions · Git, GitHub (ramas, commits, pull requests) |
+| Herramientas | Excel, Power BI, Figma |
+| Conocimientos básicos | JMeter (pruebas de rendimiento) |
 
 ---
 
 ## 💼 Experiencia
 
-**Consorcio Cueva** — QA Automation · `abril 2024 – octubre 2026`
+**Consorcio Cueva** — QA Automation · `abril 2024 – septiembre 2026`
 
-> Diseñé e implementé desde cero el framework de automatización E2E con Playwright y TypeScript sobre los flujos críticos de negocio, con Page Object Model y selectores estables, y luego migré los flujos a Selenium con Java y Cucumber. Automaticé la regresión de los flujos de mayor riesgo, documenté requisitos y pruebas en Gherkin, validé APIs con Postman y datos con SQL y MongoDB, y concilié saldos entre un procesador de pagos y la plataforma.
+> Diseñé e implementé desde cero el framework de automatización E2E con Playwright y TypeScript sobre los flujos críticos de negocio, con Page Object Model y selectores estables, y luego migré los flujos a Selenium con Java y Cucumber. Automaticé la regresión de los flujos de mayor riesgo, gestioné los scripts en GitHub con ramas, commits y pull requests, y configuré el CI/CD para ejecutarlos en cada push en los ambientes dev, QA y prod. Documenté requisitos y pruebas en Gherkin, validé APIs con Postman y datos con SQL y MongoDB, y concilié saldos entre un procesador de pagos y la plataforma.
 
 **GlobalS1** — Analista de Calidad de Software · `febrero 2023 – febrero 2024`
 
@@ -140,7 +154,7 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
 
 **Certificaciones**
 
-`Base de Datos con SQL` `Excel Avanzado para Análisis de Datos` `Power BI` `Git y GitHub` `Fundamentos de Pruebas de Software` `Automatización de Tests con Playwright` `Intermediate English B1`
+`Fundamentos de Pruebas de Software` `Automatización de Tests con Playwright` `Base de Datos con SQL` `Git y GitHub` `Excel Avanzado para Análisis de Datos` `CCNA: Introducción a las redes (Cisco)` `Intermediate English B1`
 
 ---
 
@@ -148,7 +162,6 @@ Al conciliar los saldos entre un procesador de pagos y la plataforma, encontré 
 
 - **Pruebas de rendimiento** con JMeter
 - **Pruebas mobile** con Appium
-- **Integración de suites automatizadas** en pipelines de CI/CD
 
 ---
 
